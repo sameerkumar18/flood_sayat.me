@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500');
+body {
+  color: white;
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
+  background: white;
+}
+
+html, body {
+  height: 100%;
+}
+
+*:focus {
+  outline: none;
+}
+
+a, a:hover, a:focus, a:clicked {
+  color: white;
+}
+
+main {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: none;
+}
+
+main div.cent {
+  color: white;
+  text-align: center;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 20px;
+  overflow: hidden;
+}
+
+header {
+  background-size: cover;
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+}
+
+nav {
+  width: 100%;
+  padding: 20px 100px;
+  background:#410e6d;
+  position: absolute;
+  top:0px;
+  overflow: hidden;
+  left:0px;
+}
+
+nav img {
+  width: 150px;
+}
+footer {
+  width: 100%;
+  padding: 15px 0px;
+  background-color: black;
+  position: absolute;
+  bottom: 0px;
+}
+
+.text, textarea {
+  background:transparent;
+  border:0px;
+  width:300px;
+  padding: 15px;
+  color:white;
+  font-size: 15px;
+  border-bottom: 2px solid #dadada;
+  transition: all 0.3s ease;
+}
+
+.text.saya {
+  width:220px;
+}
+
+.text:focus, textarea:focus {
+  border-bottom:2.5px solid white;
+  transition: all 0.3s ease;
+}
+
+textarea {
+  height: 80px;
+  resize: none;
+}
+
+.text::placeholder, textarea::placeholder {
+  color:#E6E6E6;
+}
+.submit {
+  cursor: pointer;
+  width:336px;
+  border: 1.5px solid white;
+  border-radius: 20px;
+  padding: 15px;
+  color:white;
+  background:transparent;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: all 0.3s linear;
+}
+
+.submit {
+  background-color: white;
+  color:#410e6d;
+  transition: all 0.3s linear;
+}
+
+footer {
+  font-family: 'Roboto';
+  font-size: 13px;
+  color:white;
+  letter-spacing: 1px;
+}
+
+a.white {
+  color: white;
+  text-decoration: none;
+}
+
+.close {
+  display: none;
+  position: absolute;
+  right: 32px;
+  top: 32px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.7;
+}
+.close:hover {
+  opacity: 1;
+}
+.close:before, .close:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 33px;
+  width: 2px;
+  background-color: white;
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
+}
+
+footer div {
+  display: inline-block;
+}
+
+footer div:nth-child(1) {
+  margin-left: 100px;
+}
+
+footer div:nth-child(2) {
+  float: right;
+  margin-right: 100px;
+}
+
+section {
+  background: rgba(0, 0, 0, 0.9);
+  width: 100%;
+  height: 100%;
+  top:0px;
+  left: 0px;
+  position: fixed;
+  display: none;
+  overflow:auto;
+}
+
+header p {
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+section h1 {
+  padding-top: 50px;
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center;
+} 
+
+section .terms  {
+  padding: 0px 200px;
+  text-align: justify;
+  line-height: 150%;
+}
+
+@media screen and (max-width:900px)
+{
+  nav {
+    padding: 20px 0px; 
+    text-align: center;
+  }
+  nav img {
+    margin:0px auto;
+  }
+  .text, textarea {
+    width:80%;
+  }
+  .text.saya {
+    width: 56%;
+  }
+  .submit {
+    width:90%;
+  }
+  footer {
+    padding: 15px 0px;
+  text-align: center;
+  }
+  footer div:nth-child(1) {
+    margin-left: 0px;
+    text-align: center;
+  }
+
+  footer div:nth-child(2) {
+    margin-right: 0px;
+    float: none;
+    line-height: 200%;
+    text-align: center;
+  }
+  section h1 {
+    padding-top: 40px;
+  }
+  section .terms {
+    padding: 10px 30px;
+    text-align: left;
+  }
+  header p {
+    width:90%;
+    margin: 0 auto;
+  }
+}
+
+
+#ocean{
+  position:absolute;
+  width:100%;
+  min-height:100%;
+  background: #410e6d;
+  overflow: hidden;
+}
+
+.wave{
+  background:rgba(126, 48, 192, 0.44);
+  display:inline-block;
+  height:60%;
+  width:10px;
+  position:absolute;
+  -webkit-animation-name:             dostuff; 
+  -webkit-animation-duration:         3s; 
+  -webkit-animation-iteration-count:  infinite;
+  -webkit-transition-timing-function: ease-in-out;
+}
+
+.wave2{
+  background:#5b1d91;
+  display:inline-block;
+  height:59%;
+  width:100%;
+  position:absolute;
+}
+
+.wave2 {
+  width: 100%;
+  display: none;
+}
+
+
+@-webkit-keyframes dostuff{
+  0%{
+    height:60%;
+  }
+  50%{ 
+    height:40%;
+  }
+  100%{ 
+    height:60%;
+  }
+}
