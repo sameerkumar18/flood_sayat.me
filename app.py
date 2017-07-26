@@ -90,4 +90,4 @@ def page_not_found(e):
     return render_template('error.html'),503
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=False,threaded=True)
