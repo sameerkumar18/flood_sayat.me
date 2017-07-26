@@ -13,7 +13,7 @@ def checkID(uid):
         return False
 
 def checkText(text):
-    if len(str(text)) <= 20000 :
+    if len(str(text)) <= 200 :
         return True
 
     else:
